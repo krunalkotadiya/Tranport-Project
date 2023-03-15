@@ -1,0 +1,572 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-items{
+    align-items: center;
+}
+
+.space{
+    margin-top: 100px;
+}
+
+
+
+/* .........................Header...................... */
+
+
+header{
+    width: 100%;
+    background-color: rgb(42, 41, 41);
+        
+}
+
+.main-header{
+    padding: 15px 0;
+    box-shadow: 0 5px 8px rgba(252, 185, 14, 0.0);
+}
+
+.logo i{
+    color: orange;
+}
+
+.logo a{
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    font-family: sans-serif;
+}
+
+nav ul li{
+    padding: 0 15px;
+}
+
+nav ul li a{
+    color: rgb(239, 200, 185);
+    font-size: 15px;
+    font-family: 'Tahoma';
+}
+
+.search i{
+    color: orange;
+    font-size: 25px;
+}
+
+
+
+/* ----------------------banner------------------------------ */
+
+.bg-banner{
+    background-image: url("../images/banner/4.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: relative;
+}
+
+.bg-banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-contant{
+    text-align: center;
+    z-index: 1;
+}
+
+.bg-banner h2{
+    color: orange;
+    font-family: sans-serif;
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+
+.bg-banner p{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* ........................type................................ */
+
+.box{
+    width: 33.33%;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid rgb(213, 212, 212);
+    box-shadow: 5px 5px 10px lightgray;
+    position: relative;
+    border-radius: 10px;
+}
+
+.box .sm-btn{
+    position: absolute;
+    background-color: orange;
+    width: 80px;
+    height: 50px;
+    margin-top: 210px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.sm-btn i{
+    text-align: center;
+    margin-top: 12px;
+    font-size: 20px;
+    color: white;
+}
+
+.box img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.box h4{
+    padding: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #3c4a62;
+}
+
+.box p{
+    font-family: sans-serif;
+    color: gray;
+    margin-bottom: 20px;
+    padding: 0 30px;
+    
+}
+
+/* .........................Quotation.................... */
+
+.qut-box{
+    width: 100%;
+    
+}
+
+.quot{
+    width: 45%;
+    background-color: lightgrey;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.quot h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    color: #3c4a62;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.quot input{
+    
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.quot textarea{
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-family: sans-serif;
+}
+
+.full{
+    width: 100%;
+}
+
+.haif{
+    width: 49.5%;
+}
+
+.quot-contant{
+    width: 50%;
+    position: relative;
+    padding-top: 100px;
+}
+
+.quot-contant h2{
+    font-size: 30px;
+    margin-top: 10px;
+    color: #3c4a62;
+    font-family: Verdana;
+}
+
+.quot-contant p{
+    font-family: Verdana;
+    color: gray;
+    margin-top: 50px;
+}
+
+.pd{
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 100px;
+    position: absolute;
+    padding: 10px;
+}
+
+.project{
+    margin: 20px;
+}
+
+.project i{
+    color: #3c4a62;
+}
+.project h2{
+    color: orange;
+}
+
+.pd .project{
+    width: 33.33%;
+    text-align: center;
+    color: orange;
+}
+
+.project .pj{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* ........................services...................... */
+
+.services h2{
+    text-align: center;
+    font-size: 40px;
+    color: #3c4a62;
+    font-family: Verdana;
+    margin-bottom: 30px;
+}
+
+.services p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------------------------------ */
+
+.srv-contant{
+    width: 100%;
+    
+}
+
+.srv-cont1{
+    width: 40%;
+    font-family: Verdana;
+    
+}
+
+.srv-cont1 h2{
+    font-size: 32px;
+    color: #3c4a62;
+    
+}
+.srv-cont1 p{
+    color: gray;
+    margin-top: 50px;
+}
+
+.srv-cont1 h3{
+    height: 50px;
+    width: 200px;
+    background-color: orange;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    color: #3c4a62;
+    padding: 12px;
+}
+
+.srv-cont2{
+    width: 60%;
+    margin-top: 50px;
+}
+
+.srv-cont2 img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+/* ----------------------------------------------------------- */
+
+.srv-banner{
+    width: 100%;
+}
+
+.srv-bn{
+    width: 50%;
+}
+
+.srv-bn img{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.svr-bn2{
+    width: 50%;
+    font-family: Arial;
+}
+
+.svr-bn2 i{
+    color: orange;
+    font-size: 30px;
+}
+
+.svr-bn2 h4{
+    color: #3c4a62;
+    margin-left: 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.svr-bn2 p{
+    color: gray;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.support{
+    width: 100%;
+}
+
+.sup-box{
+    width: 33.33%;
+    font-family: Verdana;
+}
+
+.sup-box h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    color: #3c4a62;
+}
+
+.sup-box i{
+    font-size: 40px;
+}
+
+.sup-box p{
+    margin-bottom: 80px;
+}
+
+.sup-box img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+/* ----------------------------------------------------------- */
+
+.srv-banner1{
+    background-image: url("../images/banner/2.jpg");
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.srv-banner1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.srv-bnr-contant{
+    z-index: 1;
+    text-align: center;
+}
+
+.srv-bnr-contant h2{
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    
+}
+
+/* ......................Review.............................. */
+
+.clint{
+    width: 100%;
+    text-align: center;
+    color: #3c4a62;
+    font-family: Verdana;
+}
+
+.clint h2{
+    font-size: 40px;
+    margin-bottom: 70px;
+    word-spacing: 5px;
+}
+
+.clint h3{
+    font-size: 50px;
+    margin-bottom: 30px;
+    
+}
+
+.clint img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    border: 10px solid #3c4a62;
+    margin-bottom: 30px;
+}
+
+.clint h4{
+    font-size: 25px;
+}
+
+/* .....................footer................................. */
+
+.footer{
+    background-image: url("../images/footer/map.png");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: #3c4a62;
+}
+
+.footer-contant1{
+    font-family: Verdana;
+    color: whitesmoke;
+    padding: 50px 0;
+}
+
+.footer-contant1 h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.footer-contant1 p{
+    font-size: 15px;
+}
+
+/* ..................................................... */
+
+.footer-contant2{
+    padding: 50px 0;
+}
+.footer-contant2 .mail{
+    border: none;
+    height: 50px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer-contant2 .subscribe{
+    height: 50px;
+    width: 100px;
+    background-color: orange;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* ........................................................ */
+
+.ft-ctn{
+    width: 100%;
+}
+
+.ft-contant{
+    width: 33.33%;
+    color: whitesmoke;
+    font-family: Arial;
+}
+
+.ft-contant h3{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.ft-contant p{
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: lightgrey;
+}
+.ft-contant h4{
+    margin-bottom: 20px;
+    color: lightgrey;
+}
+
+.ft-contant i{
+    color: orange;
+}
+
+/* ..........................cp............................. */
+
+.cp-rights{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.cp-rights i{
+    color: red;
+}
